@@ -1,8 +1,8 @@
 <x-layout>
     @foreach ($posts as $post)
         <article>
-            <h1>{{ $post->title }}</h1>
-            <span>{{ $post->excerpt }}</span>
+            <h1>{{ $post->title }} : {{ $post->category->name }}</h1>
+            <p>{{ $post->excerpt }}</p>
             <br/>
             <br/>
             <a href="{{ $post->slug }}">Go To Post</a>
